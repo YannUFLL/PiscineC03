@@ -6,7 +6,7 @@
 /*   By: ydumaine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/20 17:53:29 by ydumaine          #+#    #+#             */
-/*   Updated: 2022/01/20 17:57:06 by ydumaine         ###   ########.fr       */
+/*   Updated: 2022/01/22 20:19:53 by ydumaine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,6 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 		dest[i + u] = src[u];
 		u++;
 	}
+	dest[i + u] = 0;
 	return (dest);
 }

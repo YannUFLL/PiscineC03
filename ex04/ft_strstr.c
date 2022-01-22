@@ -6,7 +6,7 @@
 /*   By: ydumaine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/20 17:59:00 by ydumaine          #+#    #+#             */
-/*   Updated: 2022/01/20 19:35:31 by ydumaine         ###   ########.fr       */
+/*   Updated: 2022/01/22 20:28:10 by ydumaine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ char	*ft_strstr(char *str, char *to_find)
 		return (str);
 	while (str[i])
 	{
-		i++;
 		u = 0;
 		if (str[i] == to_find[u])
 		{
@@ -34,6 +33,7 @@ char	*ft_strstr(char *str, char *to_find)
 				u++;
 			}
 		}
+	i++;
 	}
 	return (0);
 }

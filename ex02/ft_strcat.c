@@ -6,14 +6,14 @@
 /*   By: ydumaine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/20 17:13:55 by ydumaine          #+#    #+#             */
-/*   Updated: 2022/01/20 17:51:58 by ydumaine         ###   ########.fr       */
+/*   Updated: 2022/01/22 20:16:30 by ydumaine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcat(char *dest, char *src)
 {
-	int unsigned	i;
-	int				u;
+	int	i;
+	int	u;
 
 	i = 0;
 	u = 0;
@@ -24,5 +24,6 @@ char	*ft_strcat(char *dest, char *src)
 		dest[i + u] = src[u];
 		u++;
 	}
+	dest[i + u] = 0;
 	return (dest);
 }
