@@ -6,7 +6,7 @@
 /*   By: ydumaine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/20 17:13:55 by ydumaine          #+#    #+#             */
-/*   Updated: 2022/01/20 17:27:26 by ydumaine         ###   ########.fr       */
+/*   Updated: 2022/01/29 15:13:33 by ydumaine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,12 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	i++;
 	}
 	return (c);
+}
+#include <stdio.h>
+int	main()
+{
+
+	int	c;
+	c = ft_strncmp("boa", "boa", 7);
+	printf("%d", c);
 }
